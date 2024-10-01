@@ -1,0 +1,42 @@
+// Map color project
+
+$_black:    hsl(0, 0%, 0%);
+$_bg-card:  hsl(0, 0%, 93%); 
+$_primary:  hsl(302, 100%, 50%);
+$_white:    hsl(0, 0%, 100%);
+
+$_blue-ligh:     hsl(212, 100%, 76%);
+$_magent-light:  hsl(301, 87%, 82%);
+
+
+// scss-docs-start colors-map
+$colors: (
+  "primary":  $_primary,
+  "black":    $_black,
+  "white":    $_white,
+  "blue":     $_blue-ligh,
+  "magent":   $_magent-light,
+) !default;
+
+//color txt, bg, btn-border
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+  
+  .bg-#{$key} {
+    background: $val;
+  }
+  
+  .btn-#{$key} {
+    border: 1px solid $val;
+  }
+
+  .border-#{$key} {
+    border: 1px solid $val;
+  }
+
+  .b-b_#{$key} {
+    border-bottom: 1px solid $val;
+  }
+}
