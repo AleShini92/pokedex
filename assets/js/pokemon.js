@@ -10,7 +10,7 @@ let card = '';
 
 pkmn.forEach(pkmn => {
     let pokedex = document.querySelector('#pokedex');
-    card = `<div class="p-3 b-radius_1 pointer">
+    card = `<div class="pokemon_card p-3 b-radius_2 pointer">
             <img class="" src="https://aleshini92.github.io/pokedex/assets/images/${formatID(pkmn.id)}.png">
             <h3>${pkmn.name.english}</h3>
         </div> `
@@ -53,7 +53,7 @@ searchBar.addEventListener('keyup', (e) => {
         // Costruisci le card dei Pokémon filtrati
         filterPkmnByType.forEach(pkmn => {
             card += `
-                <div class="pokemon-card">
+                <div class="pokemon_card p-3 b-radius_2 pointer">
                     <img class="pokemon-img" src="https://aleshini92.github.io/pokedex/assets/images/${formatID(pkmn.id)}.png" alt="${pkmn.name.english}">
                     <h3>${pkmn.name.english}</h3>
                 </div>`;
@@ -65,7 +65,7 @@ searchBar.addEventListener('keyup', (e) => {
 
         filterPkmn.forEach(pkmn => {
             card += `
-                <div class="pokemon_card">
+                <div class="pokemon_card p-3 b-radius_2 pointer">
                     <img class="pokemon_img" src="https://aleshini92.github.io/pokedex/assets/images/${formatID(pkmn.id)}.png"" alt="${pkmn.name.english}">
                     <h3>${pkmn.name.english}</h3>
                 </div> `;
