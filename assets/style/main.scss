@@ -9,7 +9,7 @@ main {
 .cards {
     justify-content:center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
     width: clamp(320px, 80%, 1440px);
 
     :hover {
@@ -22,5 +22,9 @@ main {
 
     h3 {
         text-align: center;
+    }
+
+    .pokemon_card {
+        border-radius: 30px;
     }
 }
