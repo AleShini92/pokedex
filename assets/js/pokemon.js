@@ -11,7 +11,7 @@ let card = '';
 pkmn.forEach(pkmn => {
     let pokedex = document.querySelector('#pokedex');
     card = `<div class="p-3 b-radius_1 pointer">
-            <img class="" src="assets/images/${formatID(pkmn.id)}.png">
+            <img class="" src="./assets/images/${formatID(pkmn.id)}.png">
             <h3>${pkmn.name.english}</h3>
         </div> `
     pokedex.insertAdjacentHTML('beforeend', card);
@@ -54,7 +54,7 @@ searchBar.addEventListener('keyup', (e) => {
         filterPkmnByType.forEach(pkmn => {
             card += `
                 <div class="pokemon-card">
-                    <img class="pokemon-img" src="assets/images/${formatID(pkmn.id)}.png" alt="${pkmn.name.english}">
+                    <img class="pokemon-img" src="./assets/images/${formatID(pkmn.id)}.png" alt="${pkmn.name.english}">
                     <h3>${pkmn.name.english}</h3>
                 </div>`;
         })
@@ -66,7 +66,7 @@ searchBar.addEventListener('keyup', (e) => {
         filterPkmn.forEach(pkmn => {
             card += `
                 <div class="pokemon_card">
-                    <img class="pokemon_img" src="assets/images/${formatID(pkmn.id)}.png"" alt="${pkmn.name.english}">
+                    <img class="pokemon_img" src="./assets/images/${formatID(pkmn.id)}.png"" alt="${pkmn.name.english}">
                     <h3>${pkmn.name.english}</h3>
                 </div> `;
                 console.log('Tipo cercato:', typeQuery);
